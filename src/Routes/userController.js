@@ -31,9 +31,22 @@ exports.user_delete_post = (req, res) => {
 exports.user_view_get = (req, res) => {
     res.send("NOT IMPLEMENTED: user view GET");
   };
+
+exports.user_get = (req, res) => {
+    res.send("NOT IMPLEMENTED: user GET");
+  };
+
+exports.user_post = (req, res) => {
+    res.send("NOT IMPLEMENTED: user POST");
+  };
+  
   
 
 router.get('/' , user_controller.index_get); 
+
+router.get('/user' , user_controller.user_get); 
+
+router.post('/user' , user_controller.user_post); 
 
 router.get('/user/create' , user_controller.user_create_get); 
 
